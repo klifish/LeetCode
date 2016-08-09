@@ -2,22 +2,6 @@
 Binary Tree Paths 
 主体：vector<string> binaryTreePaths(TreeNode* root);
 */
-#include<cstdio>
-#include<string>
-#include<iostream>
-#include<sstream>
-#include<cstdlib>
-#include<vector>
-using namespace std;
-
-struct TreeNode
-{
-	int val;
-	TreeNode *left;
-	TreeNode *right;
-	TreeNode(int x) : val(x), left(NULL), right(NULL){}
-};
-
 vector<string> binaryTreePaths(TreeNode* root) {
 	vector<string> vs;
 
@@ -50,18 +34,3 @@ vector<string> binaryTreePaths(TreeNode* root) {
 
 	return vs;
 }
-int main(int argc, char* argv[])
-{
-	TreeNode* t1 = new TreeNode{ 1 };
-	TreeNode* t2 = new TreeNode{ 2 };
-
-	t1->left = t2;
-
-	vector<string> vs = binaryTreePaths(t1);
-	for (auto it:vs){
-		cout << it << endl;
-	}
-
-	return 0;
-}
-
