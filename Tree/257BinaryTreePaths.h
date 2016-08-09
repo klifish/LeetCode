@@ -1,4 +1,7 @@
-#include "stdafx.h"
+/*
+Binary Tree Paths 
+主体：vector<string> binaryTreePaths(TreeNode* root);
+*/
 #include<cstdio>
 #include<string>
 #include<iostream>
