@@ -55,7 +55,6 @@ int main(int argc, char* argv[])
 	TreeNode* t1 = new TreeNode{ 1 };
 	TreeNode* t2 = new TreeNode{ 2 };
 
-
 	t1->left = t2;
 
 	vector<string> vs = binaryTreePaths(t1);
