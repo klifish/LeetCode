@@ -6,6 +6,8 @@
  *     TreeNode *right;
  *     TreeNode(int x) : val(x), left(NULL), right(NULL) {}
  * };
+ * 这段代码虽然不是很漂亮，但通过这道题，学习了BFS的实现，加深了对BFS的理解。
+ * 意义蛮大的，之前知道有BFS，可从未看过实现的代码，这道题完全是自己的实现，加油！
  */
 class Solution {
 public:
@@ -20,7 +22,6 @@ public:
         deque<TreeNode*> next_level{root};
         
         while(!next_level.empty()){
-            
             current_level.clear();
             current_level = next_level;
             next_level.clear();
@@ -37,6 +38,7 @@ public:
                 
                 sub_result.push_back(temp->val);
             }
+
             result.push_back(sub_result);
             sub_result.clear();
         }
