@@ -6,6 +6,7 @@
  *     TreeNode *right;
  *     TreeNode(int x) : val(x), left(NULL), right(NULL) {}
  * };
+ * 107就多了个反转的过程，要不要这么敷衍
  */
 class Solution {
 public:
