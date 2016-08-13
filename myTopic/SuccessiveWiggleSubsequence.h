@@ -21,7 +21,6 @@ public:
          * 0：等于
          * 1：大于
          */
-        
         int result = 0;
         int w = 0;
         
@@ -38,7 +37,6 @@ public:
             w = 1;
             if(w > result)
                 result = w;
-                
             start_pointer = 1;
         }
 
