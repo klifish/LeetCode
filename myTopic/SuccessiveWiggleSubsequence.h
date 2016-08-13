@@ -1,3 +1,6 @@
+/**
+ * 在做376. Wiggle Subsequence时，把题设要求理解错误，解成了最大连续摇摆序列，代码如下；已测试
+ * */
 class Solution {
 public:
     int State(int current,int last){
@@ -65,7 +68,7 @@ public:
                         }
                     }else{
                         start_pointer = i;  //更新start_pointer
-                        w = 1;//更新w
+                        w = 2;//更新w
                         if(w > result)
                             result = w;
                     }
