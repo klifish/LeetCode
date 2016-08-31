@@ -13,3 +13,7 @@ public:
         return *result.begin();
     }
 };
+/**
+ * 以上代码性能太差，优化
+ * */
+ 
