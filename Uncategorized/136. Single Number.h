@@ -26,7 +26,7 @@ public:
         int result = nums[0];
         
         for(int i = 1; i < nums.size();++i){
-            result = result ^ nums[i];
+            result = result ^ nums[i];  //按位或
         }
         
         return result;
